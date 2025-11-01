@@ -1,0 +1,93 @@
+.container {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+/* Для планшетов */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 32px;
+    }
+}
+
+/* Для мобильных */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+
+/* Для маленьких мобильных */
+@media (max-width: 375px) {
+    .container {
+        padding: 0 16px;
+    }
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header {
+    background-image: url(/img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    color:#fff;
+
+    a{
+        color:#fff;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 4px;
+    margin-right: 128px;
+}
+
+.logo__text {
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+
+.logo__icon {
+    margin-top: -2px;
+    transform-origin: center;
+    animation: slowRotate 8s linear infinite;
+}
+
+.logo__path {
+    transition: fill 0.3s ease;
+}
+
+.logo:hover .logo__text {
+    opacity: 1;
+}
+
+@keyframes slowRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.header__inner {
+    display: flex;
+
+    align-items: center;
+}
