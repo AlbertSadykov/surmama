@@ -172,6 +172,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+
+
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.nav');
 
@@ -181,4 +183,55 @@ burger.addEventListener('click', () => {
   document.body.classList.toggle('no-scroll');
 });
 
+document.querySelectorAll('.about__toggle').forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    const card = toggle.closest('.about__card');
+    card.classList.toggle('hover');
+  });
+});
 
+// Скрыть меню после перехода по ссылке
+document.querySelectorAll('.nav__link').forEach(link => {
+  link.addEventListener('click', () => {
+    burger.classList.remove('active');
+    nav.classList.remove('active');
+    document.body.classList.remove('no-scroll');
+  });
+});
+
+
+
+
+
+
+document.querySelectorAll('.validate-form').forEach(form => {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const emailInput = form.querySelector('input[name="email"]');
+    const phoneInput = form.querySelector('input[name="phone"]');
+    
+    let valid = true;
+
+    if (emailInput) {
+      if (!validator.isEmail(emailInput.value)) {
+        alert('Неверный email');
+        valid = false;
+      }
+    }
+
+    if (phoneInput) {
+      // Простая проверка, только цифры и длина >= 10
+      const phone = phoneInput.value.replace(/\D/g,'');
+      if (!validator.isLength(phone, { min: 10 })) {
+        alert('Неверный телефон');
+        valid = false;
+      }
+    }
+
+    if (valid) {
+      alert('Форма валидна! Можно отправлять');
+      form.submit(); // если нужно реальное отправление
+    }
+  });
+});

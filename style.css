@@ -1447,9 +1447,7 @@ header {
   transition: .2s linear;
 }
 
-.footer__contacts a:hover{
-  color: #e1fcad;
-}
+
 
 .bottom__footer{
   display: flex;
@@ -1489,7 +1487,7 @@ header {
 }
 
 .about__card{
-  min-height: 270px;
+  
 }
 
 .about__card-bottom {
@@ -1722,5 +1720,16 @@ flex-direction: column;
   font-size: 100px;
 }
 
+header{
+  background-image: url('img/bg-mob.jpg');
+}
+
+.hero__middle {
+    & div {
+        p {
+            margin-bottom: 20px;
+        }
+    }
+}
 
 }
