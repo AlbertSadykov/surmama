@@ -1,279 +1,934 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>СУРМАМЫ</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="apple-touch-icon" href="img/favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
-</head>
-<body>
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+  </head>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__logo">
-                    <a href="index.html" class="logo">
-                        <span class="logo__text">Москва</span>
-                        <svg class="logo__icon" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="logo__path" d="M14.8607 0L11.4196 8.19777L7.87735 0L4.13281 1.61931L5.75208 5.26277C6.76409 7.59052 8.88936 9.00743 11.5209 9.00743C14.0511 9.00743 16.1764 7.59052 17.1884 5.16155L18.7064 1.51811L14.8607 0Z" fill="white"/>
-                            <path class="logo__path" d="M0 13.0557H9.00758L2.83377 19.533L5.7688 22.3668L8.50157 19.4318C10.2221 17.6101 10.7281 14.9787 9.71583 12.6509C8.70382 10.3231 6.57855 8.90625 3.94703 8.90625H0V13.0557Z" fill="white"/>
-                            <path class="logo__path" d="M22.9798 13.0557H13.9724L20.146 19.533L17.211 22.3668L14.4785 19.4318C12.7579 17.6101 12.2519 14.9787 13.2639 12.6509C14.2759 10.3231 16.4012 8.90625 19.0327 8.90625H22.9798V13.0557Z" fill="white"/>
-                        </svg>
-                    </a>
-                </div>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="#results">Результаты</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#path">Путь</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#program">Программа</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#stories">Истории</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#consultation">Консультация</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#team">Команда</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#faq">FAQ</a></li>
-                    </ul>
-                </nav>
-                <div class="header__phone">
-                    <a href="tel:+788008000000">8 (800) 800 00 00</a>
-            </div>
-            <div class="header__button">
-                <a class="btn btn-primary btn-primary--header" href="#">Оставить заявку <span class="btn-icon"><img src="img/Vector.svg" alt="стрелка"></span></a>
-            </div>
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo">
+            <a href="index.html" class="logo">
+              <span class="logo__text">Москва</span>
+              <svg
+                class="logo__icon"
+                width="23"
+                height="23"
+                viewBox="0 0 23 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  class="logo__path"
+                  d="M14.8607 0L11.4196 8.19777L7.87735 0L4.13281 1.61931L5.75208 5.26277C6.76409 7.59052 8.88936 9.00743 11.5209 9.00743C14.0511 9.00743 16.1764 7.59052 17.1884 5.16155L18.7064 1.51811L14.8607 0Z"
+                  fill="white"
+                />
+                <path
+                  class="logo__path"
+                  d="M0 13.0557H9.00758L2.83377 19.533L5.7688 22.3668L8.50157 19.4318C10.2221 17.6101 10.7281 14.9787 9.71583 12.6509C8.70382 10.3231 6.57855 8.90625 3.94703 8.90625H0V13.0557Z"
+                  fill="white"
+                />
+                <path
+                  class="logo__path"
+                  d="M22.9798 13.0557H13.9724L20.146 19.533L17.211 22.3668L14.4785 19.4318C12.7579 17.6101 12.2519 14.9787 13.2639 12.6509C14.2759 10.3231 16.4012 8.90625 19.0327 8.90625H22.9798V13.0557Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#results">Результаты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#path">Путь</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#program">Программа</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#stories">Истории</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#consultation">Консультация</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#team">Команда</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#faq">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__phone">
+            <a href="tel:+788008000000">8 (800) 800 00 00</a>
+          </div>
+
+          <div class="header__button">
+            <a class="btn btn-primary btn-primary--header" href="#">
+              Оставить заявку
+              <span class="btn-icon"
+                ><img src="img/Vector.svg" alt="стрелка"
+              /></span>
+            </a>
+          </div>
         </div>
+        <!-- .header__inner закрыт -->
 
         <div class="hero">
-           <div class="hero__content">
+          <div class="hero__content">
             <div class="hero__header">
-                 <h1>Путь к счастливому родительству начинается <span>здесь</span></h1>
-            <p>Инновационный центр репродуктивных технологий, где каждая программа ведётся лично нашим главным врачом.</p>
+              <h1>
+                Путь к счастливому родительству начинается <span>здесь</span>
+              </h1>
+              <p>
+                Инновационный центр репродуктивных технологий, где каждая
+                программа ведётся лично нашим главным врачом.
+              </p>
             </div>
 
             <div class="hero__middle">
-                <div class="hero__middle-left">
-                    <h3>Подобрать суррогатную маму без ожидания</h3>
-                    <ul>
-                        <li>Перезапуск программы без доплат</li>
-                        <li>Не считаем попытки — считаем результат</li>
-                        <li>Проводим программы в Москве и Абу-Даби <img src="/img/Flag.jpg" class="flag" alt=""></li>
-                    </ul>
-                    <a class="btn btn-primary btn-hover-lg" href="#">Начать путь к родительству <span class="btn-icon"><img src="img/Vector.svg" alt="стрелка"></span></a>
-                </div>
-                <div class="hero__middle-right">
-                    <h3>Подобрать суррогатную маму без ожидания</h3>
-                    <p>Получите достойное вознаграждение и нашу полную поддержку, помогая другим стать родителями</p>
-                    <a class="btn btn-second" href="#">Узнать условия <span class="btn-icon btn-icon-second"><img src="img/Vector.svg" alt="стрелка"></span></a>
-                </div>
+              <div class="hero__middle-left">
+                <h3>Подобрать суррогатную маму без ожидания</h3>
+                <ul>
+                  <li>Перезапуск программы без доплат</li>
+                  <li>Не считаем попытки — считаем результат</li>
+                  <li>
+                    Проводим программы в Москве и Абу-Даби
+                    <img src="/img/Flag.jpg" class="flag" alt="" />
+                  </li>
+                </ul>
+                <a class="btn btn-primary btn-hover-lg" href="#"
+                  >Начать путь к родительству
+                  <span class="btn-icon"
+                    ><img src="img/Vector.svg" alt="стрелка" /></span
+                ></a>
+              </div>
+              <div class="hero__middle-right">
+                <h3>Подобрать суррогатную маму без ожидания</h3>
+                <p>
+                  Получите достойное вознаграждение и нашу полную поддержку,
+                  помогая другим стать родителями
+                </p>
+                <a class="btn btn-second" href="#"
+                  >Узнать условия
+                  <span class="btn-icon btn-icon-second"
+                    ><img src="img/Vector.svg" alt="стрелка" /></span
+                ></a>
+              </div>
             </div>
 
             <div class="hero__footer">
-                <h3>
-                    Наша миссия — привлечь внимание общества к вопросам репродуктивного здоровья, расширять научные знания в этой области и предлагать <span> эффективные решения для создания здорового старта жизни будущих поколений</span>
-                </h3>
+              <h3>
+                Наша миссия — привлечь внимание общества к вопросам
+                репродуктивного здоровья, расширять научные знания в этой
+                области и предлагать
+                <span
+                  >эффективные решения для создания здорового старта жизни
+                  будущих поколений</span
+                >
+              </h3>
 
-                <div class="hero__footer-year">
-                    <h3>2010</h3>
-                    <p>Мы создаем семьи с 2010 года и гордимся результатами</p>
-                    <a href="#" class="btn btn-link">Подробнее о нас <img src="img/Vector-lg.svg" alt="стрелка"></a>
-                </div>
+              <div class="hero__footer-year">
+                <h3>2010</h3>
+                <p>Мы создаем семьи с 2010 года и гордимся результатами</p>
+                <a href="#" class="btn btn-link"
+                  >Подробнее о нас <img src="img/Vector-lg.svg" alt="стрелка"
+                /></a>
+              </div>
             </div>
-
-           </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <main>
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="title title--about">Мы создаем семьи <span>и гордимся результатами</span></h2>
-                <div class="about__row">
-                    <article class="about__card about__card--small">
-                        <button class="about__toggle" aria-expanded="false" aria-label="toggle"></button>
-                        <div class="about__card-body">
-                            <div class="about__card-bottom">
-                                <h3 class="about__card-100">100%</h3>
-                                <p class="about__subtitle">Прозрачный процесс, продуманный до мелочей</p>
-                                <div class="about__card-text">За долгие годы работы мы выработали уникальную систему, которая предусматривает абсолютно всё. Это проверенная «дорожная карта», по которой уже прошли сотни семей. Каждый шаг прописан в договоре, где нет никакого мелкого шрифта или двояких формулировок. Вы получаете полный финансовый план без скрытых и внезапных платежей, а итоговая стоимость фиксируется и не меняется.</div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="about__card about__card--img">
-                        <button class="about__toggle" aria-expanded="false" aria-label="toggle"></button>
-                        <div class="about__card-body">
-                            <div class="about__card-bottom">
-                                <h3>>650</h3>
-                                <p class="about__subtitle">счастливых семей  за 14 лет работы</p>
-                                <div class="about__card-text">За 14 лет работы мы помогли родиться более 650 малышам. Для нас это не просто статистика. Это сотни уникальных историй и сбывшихся семейных мечт. Мы будем рады помочь написать и вашу.</div>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="about__card">
-                        <button class="about__toggle" aria-expanded="false" aria-label="toggle"></button>
-                        <div class="about__card-body">
-                            <div class="about__card-bottom">
-                                <h3>1500+</h3>
-                                <p class="about__subtitle">Кандидатов из нашей базы, быстрый подбор сурмамы</p>
-                                <div class="about__card-text">Сможем познакомить вас с подходящей сурмамой сразу после заключения договора. У нас большая база проверенных и полностью обследованных женщин, готовых вступить в программу.</div>
-                            </div>
-                        </div>
-                    </article>
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="title title--about">
+            Мы создаем семьи <span>и гордимся результатами</span>
+          </h2>
+          <div class="about__row">
+            <article class="about__card about__card--small">
+              <button
+                class="about__toggle"
+                aria-expanded="false"
+                aria-label="toggle"
+              ></button>
+              <div class="about__card-body">
+                <div class="about__card-bottom">
+                  <h3 class="about__card-100">100%</h3>
+                  <p class="about__subtitle">
+                    Прозрачный процесс, продуманный до мелочей
+                  </p>
+                  <div class="about__card-text">
+                    За долгие годы работы мы выработали уникальную систему,
+                    которая предусматривает абсолютно всё. Это проверенная
+                    «дорожная карта», по которой уже прошли сотни семей. Каждый
+                    шаг прописан в договоре, где нет никакого мелкого шрифта
+                    или двояких формулировок. Вы получаете полный финансовый
+                    план без скрытых и внезапных платежей, а итоговая стоимость
+                    фиксируется и не меняется.
+                  </div>
                 </div>
+              </div>
+            </article>
+
+            <article class="about__card about__card--img">
+              <button
+                class="about__toggle"
+                aria-expanded="false"
+                aria-label="toggle"
+              ></button>
+              <div class="about__card-body">
+                <div class="about__card-bottom">
+                  <h3>&gt;650</h3>
+                  <p class="about__subtitle">
+                    счастливых семей за 14 лет работы
+                  </p>
+                  <div class="about__card-text">
+                    За 14 лет работы мы помогли родиться более 650 малышам.
+                    Для нас это не просто статистика. Это сотни уникальных
+                    историй и сбывшихся семейных мечт. Мы будем рады помочь
+                    написать и вашу.
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="about__card">
+              <button
+                class="about__toggle"
+                aria-expanded="false"
+                aria-label="toggle"
+              ></button>
+              <div class="about__card-body">
+                <div class="about__card-bottom">
+                  <h3>1500+</h3>
+                  <p class="about__subtitle">
+                    Кандидатов из нашей базы, быстрый подбор сурмамы
+                  </p>
+                  <div class="about__card-text">
+                    Сможем познакомить вас с подходящей сурмамой сразу
+                    после заключения договора. У нас большая база проверенных
+                    и полностью обследованных женщин, готовых вступить
+                    в программу.
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq" id="faq">
+        <div class="container">
+          <div class="faq__header">
+            <h2 class="title title--faq">
+              Ваш путь к родительству:
+              <span>убираем тревоги и даём ответы</span> на главные вопросы
+            </h2>
+            <div class="faq__header--right">
+              <p class="title__text">
+                Мы знаем, какой непростой и волнительный путь привёл вас сюда.
+                И понимаем, что решение, которое вы обдумываете, — одно из самых
+                важных в жизни.Поэтому давайте честно поговорим о том,
+                что волнует вас больше всего
+              </p>
+              <a class="btn btn-primary" href="#"
+                >О программе для родителей
+                <span class="btn-icon"
+                  ><img src="img/Vector.svg" alt="стрелка" /></span
+              ></a>
             </div>
-        </section>
+          </div>
 
-        <section class="faq" id="faq">
-
-            <div class="container">
-               <div class="faq__header">
-                 <h2 class="title title--faq">Ваш путь к родительству: <span>убираем тревоги и даём ответы</span> на главные вопросы</h2>
-                <div class="faq__header--right">
-                    <p class="title__text">Мы знаем, какой непростой и волнительный путь привёл вас сюда. И понимаем, что решение, которое вы обдумываете, — одно из самых важных в жизни.Поэтому давайте честно поговорим о том, что волнует вас больше всего</p>
-                     <a class="btn btn-primary" href="#">О программе для родителей <span class="btn-icon"><img src="img/Vector.svg" alt="стрелка"></span></a>
-                </div>
-               </div>
-
-               <div class="faq__row">
-                    <div class="faq__col">
-                        <div class="faq__item">
-                            <button class="faq__question" type="button">
-                                Как выбрать суррогатную маму? Можно ли ей доверять?
-                                <span class="faq__toggle"></span>
-                            </button>
-                            <div class="faq__answer">Ответ на этот вопрос...</div>
-                        </div>
-                        <div class="faq__item">
-                            <button class="faq__question" type="button">
-                                Насколько это безопасно?
-                                <span class="faq__toggle"></span>
-                            </button>
-                            <div class="faq__answer">Ответ на этот вопрос...</div>
-                        </div>
-                        <div class="faq__item">
-                            <button class="faq__question" type="button">
-                                Какие сроки подбора и стоимость программы?
-                                <span class="faq__toggle"></span>
-                            </button>
-                            <div class="faq__answer">Ответ на этот вопрос...</div>
-                        </div>
-                    </div>
-                    <div class="faq__col">
-                        <div class="faq__item">
-                            <button class="faq__question" type="button">
-                                Какие гарантии? Если суррогатная мама передумает?
-                                <span class="faq__toggle"></span>
-                            </button>
-                            <div class="faq__answer">Ответ на этот вопрос...</div>
-                        </div>
-                        <div class="faq__item">
-                            <button class="faq__question" type="button">
-                                Как устроен процесс? Мне нужно будет контролировать?
-                                <span class="faq__toggle"></span>
-                            </button>
-                            <div class="faq__answer">Ответ на этот вопрос...</div>
-                        </div>
-                    </div>
-                </div>
-                <img src="/img/bg-2.jpg" alt="" class="faq__bg">
+          <div class="faq__row">
+            <div class="faq__col">
+              <div class="faq__item">
+                <button class="faq__question" type="button">
+                  Как выбрать суррогатную маму? Можно ли ей доверять?
+                  <span class="faq__toggle"></span>
+                </button>
+                <div class="faq__answer">Ответ на этот вопрос...</div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question" type="button">
+                  Насколько это безопасно?
+                  <span class="faq__toggle"></span>
+                </button>
+                <div class="faq__answer">Ответ на этот вопрос...</div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question" type="button">
+                  Какие сроки подбора и стоимость программы?
+                  <span class="faq__toggle"></span>
+                </button>
+                <div class="faq__answer">Ответ на этот вопрос...</div>
+              </div>
             </div>
-        </section>
+            <div class="faq__col">
+              <div class="faq__item">
+                <button class="faq__question" type="button">
+                  Какие гарантии? Если суррогатная мама передумает?
+                  <span class="faq__toggle"></span>
+                </button>
+                <div class="faq__answer">Ответ на этот вопрос...</div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question" type="button">
+                  Как устроен процесс? Мне нужно будет контролировать?
+                  <span class="faq__toggle"></span>
+                </button>
+                <div class="faq__answer">Ответ на этот вопрос...</div>
+              </div>
+            </div>
+          </div>
+          <img src="/img/bg-2.jpg" alt="" class="faq__bg" />
+        </div>
+      </section>
 
-        <section class="features" id="features">
-            <div class="container">
-                <div class="features__header">
-                    <h2 class="title"><span>Ваши тревоги</span> – берем на себя</h2>
-                    <p class="title__text features__text">
-                        Вы просто ждете своего малыша. Все остальное доверьте нам
+      <section class="features" id="features">
+        <div class="container">
+          <div class="features__header">
+            <h2 class="title"><span>Ваши тревоги</span> – берем на себя</h2>
+            <p class="title__text features__text">
+              Вы просто ждете своего малыша. Все остальное доверьте нам
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <article class="features-card">
+              <button
+                class="about__toggle"
+                aria-expanded="false"
+                aria-label="toggle"
+              ></button>
+
+              <div class="features-card__front">
+                <img
+                  src="/img/features/Link.jpg"
+                  alt=""
+                  class="features-card__img"
+                />
+                <h3 class="features-card__title">
+                  Ваши родительские права — это святое
+                </h3>
+                <p class="features-card__subtitle">
+                  Полное юридическое сопровождение, полная прозрачность
+                  в договоре Без скрытых платежей. Получение свидетельства
+                  о рождении, подготовленного нашим юристом, в срок 1–2 дня.
+                </p>
+              </div>
+
+              <div class="features-card__back">
+                <p>
+                  Мы с вами подписываем «железный» договор, где нет ни одной
+                  лазейки или мелкого шрифта. Он на 100% защищает именно вас.
+                  Наши юристы — эксперты в репродуктивном праве. Они сами
+                  соберут и оформят все до единой бумажки. В итоге вы получаете
+                  свидетельство о рождении, где в графе «родители» стоите только
+                  вы. И точка.
+                </p>
+              </div>
+            </article>
+
+            <article class="features-card features-card--empty"></article>
+
+            <article class="features-card">
+              <button
+                class="about__toggle"
+                aria-expanded="false"
+                aria-label="toggle"
+              ></button>
+              <div class="features-card__front">
+                <img
+                  src="/img/features/Link-1.jpg"
+                  alt=""
+                  class="features-card__img"
+                />
+                <h3 class="features-card__title">
+                  За здоровье отвечаем лично мы и лучшие врачи
+                </h3>
+                <p class="features-card__subtitle">
+                  Сможем познакомить вас с подходящей сурмамой сразу
+                  после заключения договора. У нас большая база проверенных
+                  и полностью обследованных женщин, готовых вступить
+                  в программу.
+                </p>
+              </div>
+              <div class="features-card__back">
+                <p>
+                  Мы не просто «контролируем». Наш главный врач лично ведёт вашу
+                  программу и следит, чтобы всё было на высшем уровне.
+                  Суррогатная мама наблюдается в лучших клиниках, у докторов,
+                  которым мы доверяем как себе. Любые анализы, процедуры,
+                  витамины — всё под нашим неусыпным контролем. Чтобы вы были
+                  спокойны, а будущему малышу было комфортно и безопасно.
+                </p>
+              </div>
+            </article>
+
+            <article class="features-card">
+              <button
+                class="about__toggle"
+                aria-expanded="false"
+                aria-label="toggle"
+              ></button>
+              <div class="features-card__front">
+                <img
+                  src="/img/features/Link-2.jpg"
+                  alt=""
+                  class="features-card__img"
+                />
+                <h3 class="features-card__title">
+                  Душевное спокойствие — для всех
+                </h3>
+                <p class="features-card__subtitle">
+                  Всегда на связи 24/7 с вами. Берём на себя все риски
+                  при беременности.Безлимитное количество замен сурмамы
+                  по показаниям. Вашу программу сопровождают лучшие врачи
+                  с опытом от 10 лет.
+                </p>
+              </div>
+              <div class="features-card__back">
+                <p>
+                  Мы прекрасно понимаем, сколько эмоций и переживаний в этом
+                  пути. Поэтому наш психолог деликатно поддерживает и вас, и
+                  суррогатную маму. Зачем это нужно? Чтобы создать здоровую,
+                  спокойную и уважительную атмосферу. Когда все участники
+                  процесса чувствуют себя комфортно, беременность протекает
+                  намного легче.
+                </p>
+              </div>
+            </article>
+
+            <article class="features-card features-card--empty"></article>
+
+            <article class="features-card">
+              <button
+                class="about__toggle"
+                aria-expanded="false"
+                aria-label="toggle"
+              ></button>
+              <div class="features-card__front">
+                <img
+                  src="/img/features/Link-3.jpg"
+                  alt=""
+                  class="features-card__img"
+                />
+                <h3 class="features-card__title">
+                  Ваш личный куратор, который всегда на шаг впереди
+                </h3>
+                <p class="features-card__subtitle">
+                  Мы быстро подберём для вас здоровую суррогатную маму,
+                  соответствующую требованиям Приказа 803 МЗ РФ, и проведём вашу
+                  программу без задержек.
+                </p>
+              </div>
+              <div class="features-card__back">
+                <p>
+                  С первого дня у вас будет свой человек в нашей команде —
+                  личный куратор. Это не просто менеджер. Это ваша правая рука,
+                  ваше доверенное лицо, доступное 24/7. Он не ждёт от вас
+                  вопросов, а решает всё на опережение: координирует врачей,
+                  юристов, решает любые бытовые моменты. Он — ваш единственный
+                  номер в телефоне по всем вопросам, чтобы избавить вас от любых
+                  хлопот.
+                </p>
+              </div>
+            </article>
+
+            <article class="features-card features-card--empty"></article>
+
+            <article class="features-card">
+              <button
+                class="about__toggle"
+                aria-expanded="false"
+                aria-label="toggle"
+              ></button>
+              <div class="features-card__front">
+                <img
+                  src="/img/features/Link-4.jpg"
+                  alt=""
+                  class="features-card__img"
+                />
+                <h3 class="features-card__title">
+                  Создаём идеальные условия для вашего малыша
+                </h3>
+                <p class="features-card__subtitle">
+                  Проживание сурмамы в удобной квартире на весь период
+                  программы, включая одежду и все транспортные расходы. Забота о
+                  сурмаме: контроль питания, культурная программа, включая
+                  концерты с живой классической музыкой
+                </p>
+              </div>
+              <div class="features-card__back">
+                <p>
+                  Мы полностью берём на себя заботу о суррогатной маме.
+                  при необходимости Помогаем с переездом, снимаем и обустраиваем
+                  для неё комфортное жильё, решаем все бытовые мелочи.
+                  Обеспечиваем маму йогой, плаванием, витаминами и питанием
+                  по индивидуальному медицинскому плану. Почему это так важно?
+                  Потому что, создавая идеальные условия для неё, мы в первую
+                  очередь заботимся о том, чтобы вашему будущему ребёнку было
+                  спокойно и хорошо все девять месяцев.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="quotes">
+        <div class="container">
+          <div class="quotes__header">
+            <h2 class="title title--quotes">
+              <span>У них получилось,</span> получится и у вас
+            </h2>
+            <div class="quotes__nav">
+              <button class="swiper-button-prev" aria-label="prev">
+                <img src="img/left.svg" alt="prev" />
+              </button>
+              <button class="swiper-button-next" aria-label="next">
+                <img src="img/right.svg" alt="next" />
+              </button>
+            </div>
+          </div>
+
+          <div class="quotes__carousel swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="quotes__card">
+                  <div class="card-body card-body--front">
+                    <div class="quote__content">
+                        <div class="card-top">
+                      <img src="img/q1.jpg" alt="" class="card-photo" />
+                    </div>
+                    <p class="q__name">Семья Ивановых</p>
+                    <p class="q__text">
+                      Агентство было рядом 24/7 на всем пути. Спасибо за то, что
+                      взяли нас за руку и привели к нашему сыну!
                     </p>
+                    </div>
+
+                    <img src="img/quotes.svg" alt="" class="card-quotes" />
+                  </div>
+
+                  
+
+                  <div class="card-body card-body--back">
+                    <p>
+                      «Чёткость, предсказуемость, профессионализм… вот наверно три главных слова которыми я бы описал работу агентства» Мы с мужем люди системные. Пришли в агентство после долгих лет попыток, с полным выгоранием но с чётким запросом: нужен понятный процесс без «сюрпризов». И получили даже больше. Во‑первых, скорость. Сказали, что сурмаму подберут без ожидания, и это оказалось правдой. Буквально через неделю после договора мы уже знакомились. Для нас, у которых время это самый ценный ресурс, это было очень, очень важно. Во‑вторых, финансы. Сумма в договоре — финальная. За все время не вылезло ни одного доп платежа, хотя были какие‑то незапланированные анализы. Все входило в стоимость, это давало невероятное чувство контроля. И главное — команда. Наш куратор работал на опережение, нам не приходилось писать и спрашивать ну что там? Новости от врачей приходили раньше, чем мы успевали забеспокоиться. Врачи, отдельная благодарность. Никакой воды, все по делу. В общем, подход к работе — идеальный.
+                    </p>
+                  </div>
+
+                  <button
+                    class="about__toggle"
+                    aria-expanded="false"
+                    aria-label="open"
+                  ></button>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                  <article class="quotes__card">
+                  <div class="card-body card-body--front">
+                    <div class="quote__content">
+                        <div class="card-top">
+                      <img src="img/q2.jpg" alt="" class="card-photo" />
+                    </div>
+                    <p class="q__name">Анна и Сергей</p>
+                    <p class="q__text">
+                      Агентство было рядом 24/7 на всем пути. Спасибо за то, что взяли нас за руку и привели к нашему сыну!
+                    </p>
+                    </div>
+
+                    <img src="img/quotes.svg" alt="" class="card-quotes" />
+                  </div>
+
+                  
+
+                  <div class="card-body card-body--back">
+                    <p>
+                      «Чёткость, предсказуемость, профессионализм… вот наверно три главных слова которыми я бы описал работу агентства» Мы с мужем люди системные. Пришли в агентство после долгих лет попыток, с полным выгоранием но с чётким запросом: нужен понятный процесс без «сюрпризов». И получили даже больше. Во‑первых, скорость. Сказали, что сурмаму подберут без ожидания, и это оказалось правдой. Буквально через неделю после договора мы уже знакомились. Для нас, у которых время это самый ценный ресурс, это было очень, очень важно. Во‑вторых, финансы. Сумма в договоре — финальная. За все время не вылезло ни одного доп платежа, хотя были какие‑то незапланированные анализы. Все входило в стоимость, это давало невероятное чувство контроля. И главное — команда. Наш куратор работал на опережение, нам не приходилось писать и спрашивать ну что там? Новости от врачей приходили раньше, чем мы успевали забеспокоиться. Врачи, отдельная благодарность. Никакой воды, все по делу. В общем, подход к работе — идеальный.
+                    </p>
+                  </div>
+
+                  <button
+                    class="about__toggle"
+                    aria-expanded="false"
+                    aria-label="open"
+                  ></button>
+                </article>
+              </div>
+
+              <div class="swiper-slide">
+                 <article class="quotes__card">
+                  <div class="card-body card-body--front">
+                    <div class="quote__content">
+                        <div class="card-top">
+                      <img src="img/q1.jpg" alt="" class="card-photo" />
+                    </div>
+                    <p class="q__name">Семья Ивановых</p>
+                    <p class="q__text">
+                      Агентство было рядом 24/7 на всем пути. Спасибо за то, что
+                      взяли нас за руку и привели к нашему сыну!
+                    </p>
+                    </div>
+
+                    <img src="img/quotes.svg" alt="" class="card-quotes" />
+                  </div>
+
+                  
+
+                  <div class="card-body card-body--back">
+                    <p>
+                      «Чёткость, предсказуемость, профессионализм… вот наверно три главных слова которыми я бы описал работу агентства» Мы с мужем люди системные. Пришли в агентство после долгих лет попыток, с полным выгоранием но с чётким запросом: нужен понятный процесс без «сюрпризов». И получили даже больше. Во‑первых, скорость. Сказали, что сурмаму подберут без ожидания, и это оказалось правдой. Буквально через неделю после договора мы уже знакомились. Для нас, у которых время это самый ценный ресурс, это было очень, очень важно. Во‑вторых, финансы. Сумма в договоре — финальная. За все время не вылезло ни одного доп платежа, хотя были какие‑то незапланированные анализы. Все входило в стоимость, это давало невероятное чувство контроля. И главное — команда. Наш куратор работал на опережение, нам не приходилось писать и спрашивать ну что там? Новости от врачей приходили раньше, чем мы успевали забеспокоиться. Врачи, отдельная благодарность. Никакой воды, все по делу. В общем, подход к работе — идеальный.
+                    </p>
+                  </div>
+
+                  <button
+                    class="about__toggle"
+                    aria-expanded="false"
+                    aria-label="open"
+                  ></button>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="catalog">
+        <div class="container">
+            <div class="catalog__blocks">
+                <div class="catalog__info">
+                    <h2 class="title title--catalog"><span>5 историй,</span> которые нас вдохновляют</h2>
+                    <p class="title__text">Мы собрали истории 5 семей, которые смогли стать родителями по нашей программе. Познакомьтесь с опытом реальных людей, у которых все получилось.</p>
+                    <a class="btn btn-second btn-width" href="#"
+                  >Скачать
+                  <span class="btn-icon"
+                    ><img src="img/Vector.svg" alt="стрелка" /></span
+                ></a>
                 </div>
 
+                <div class="catalog__gallery">
+                    <img src="/img/catalog/1.jpg" alt="" class="catalog__img" />
+                    <img src="/img/catalog/2.jpg" alt="" class="catalog__img" />
+                    <img src="/img/catalog/3.jpg" alt="" class="catalog__img" />
+                    <img src="/img/catalog/4.jpg" alt="" class="catalog__img" />
+                    <img src="/img/catalog/5.jpg" alt="" class="catalog__img" />
+                </div>
                 
-<div class="features-grid">
-  <article class="features-card">
-    <button class="about__toggle" aria-expanded="false" aria-label="toggle"></button>
-
-    <div class="features-card__front">
-      <img src="/img/card1.jpg" alt="" class="features-card__img">
-      <h3 class="features-card__title">Ваши родительские права — это святое</h3>
-      <p class="features-card__subtitle">Полное юридическое сопровождение, прозрачный договор без скрытых платежей.</p>
-    </div>
-
-    <div class="features-card__back">
-      <p>Получение свидетельства о рождении, подготовленного нашим юристом, в срок 1–2 дня. Полный финансовый план без скрытых платежей и внезапных доплат.</p>
-    </div>
-  </article>
-
-  <article class="features-card">
-    <button class="about__toggle" aria-expanded="false" aria-label="toggle"></button>
-
-    <div class="features-card__front">
-      <img src="/img/card2.jpg" alt="" class="features-card__img">
-      <h3 class="features-card__title">За здоровье отвечаем лично мы</h3>
-      <p class="features-card__subtitle">Познакомим с подходящими врачами и мамой после заключения договора.</p>
-    </div>
-
-    <div class="features-card__back">
-      <p>У нас большая база проверенных женщин и опытные врачи. Полное сопровождение программы: обследования, контроль и поддержка на всех этапах.</p>
-    </div>
-  </article>
-
-
-  <article class="features-card">
-    <button class="about__toggle" aria-expanded="false" aria-label="toggle"></button>
-    <div class="features-card__front">
-      <img src="/img/card3.jpg" alt="" class="features-card__img">
-      <h3 class="features-card__title">Душевное спокойствие — для всех</h3>
-      <p class="features-card__subtitle">24/7 поддержка, лучшие врачи с опытом.</p>
-    </div>
-    <div class="features-card__back">
-      <p>Берём на себя все риски при беременности. Индивидуальная программа и поддержка психологов и врачей.</p>
-    </div>
-  </article>
-
-  <article class="features-card">
-    <button class="about__toggle" aria-expanded="false" aria-label="toggle"></button>
-    <div class="features-card__front">
-      <img src="/img/card4.jpg" alt="" class="features-card__img">
-      <h3 class="features-card__title">Ваш личный куратор</h3>
-      <p class="features-card__subtitle">Куратор ведёт программу и координирует всех специалистов.</p>
-    </div>
-    <div class="features-card__back">
-      <p>Подбор кандидатов, контроль сроков и логистика — всё под ключ, чтобы не было задержек.</p>
-    </div>
-  </article>
-
-  <article class="features-card">
-    <button class="about__toggle" aria-expanded="false" aria-label="toggle"></button>
-    <div class="features-card__front">
-      <img src="/img/card5.jpg" alt="" class="features-card__img">
-      <h3 class="features-card__title">Создаём идеальные условия для малыша</h3>
-      <p class="features-card__subtitle">Проживание, питание и забота на весь период.</p>
-    </div>
-    <div class="features-card__back">
-      <p>Комфортные условия проживания, транспорт и культурная программа — всё включено в сопровождение.</p>
-    </div>
-  </article>
-</div>
             </div>
-        </section>
+        </div>
+      </section>
+
+      <section class="consultation">
+        <div class="container">
+            <h2 class="title title--cons"><span>Приглашаем</span> на конфиденциальную консультацию</h2>
+                <div class="cons__blocks">
+                     <div class="cons__left">
+                <p class="title__text">Мы понимаем, что такое решение не принимают в спешке. Поэтому наша первая консультация — это не продажа, а спокойный разговор. Он нужен для того, чтобы вы получили честные ответы на все свои вопросы и приняли верное решение без всякого давления.</p>
+
                 
+                  <form class="cons__form" action="#" method="post">
+                    <div class="form-group">
+                      <input type="text" name="name" placeholder="Ваше имя" required class="form-input" />
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" name="phone" placeholder="Телефон" required class="form-input" />
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-form">Записаться <span class="btn-icon"
+                    ><img src="img/Vector.svg" alt="стрелка" /></span
+                ></button>
+                    <p class="form-policy">
+                      Нажимая на кнопку, я соглашаюсь с <a href="#" target="_blank">политикой обработки персональных данных</a>
+                    </p>
+                  </form>
+            </div>
+            <div class="cons__right">
+                <ul>
+                    <li>
+                        <img src="img/plus.svg" alt="">
+                        <div class="cons__feat">
+                            <h4>Честные ответы на неудобные вопросы</h4>
+                            <p>Мы создадим безопасное пространство, где можно спросить абсолютно обо всём, что вас тревожит. Никаких запретных тем — только спокойный и откровенный разговор.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/plus.svg" alt="">
+                        <div class="cons__feat">
+                            <h4>Полная картина процесса, без «белых пятен»</h4>
+                            <p>Наглядно, на примере анонимных историй других семей, покажем как всё устроено на самом деле — от первого звонка до получения свидетельства о рождении. У вас не останется никаких сомнений.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/plus.svg" alt="">
+                        <div class="cons__feat">
+                            <h4>Ваш личный пошаговый план </h4>
+                            <p>Мы разберём именно вашу ситуацию. В итоге вы уйдёте с чётким пониманием, какие шаги предстоят конкретно в вашем случае. Это поможет вам принять взвешенное решение, без всякого давления.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+                </div>
+        </div>
+      </section>
 
-        </main>
+     <section class="team" id="team">
+  <div class="container">
+    <div class="team__header">
+      <h2 class="title"><span>Вас за руку проведет</span> наша команда</h2>
 
+      <div class="team__nav">
+        <button class="swiper-button-prev" aria-label="prev">
+          <img src="img/left.svg" alt="prev" />
+        </button>
+        <button class="swiper-button-next" aria-label="next">
+          <img src="img/right.svg" alt="next" />
+        </button>
+      </div>
+    </div>
 
+    <div class="team__carousel swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="team__card">
+            <img src="img/team/1.jpg" alt="">
+            <h4>Анатолий Викторович Волошинский</h4>
+            <p>Моя задача — обеспечить ваше абсолютное юридическое спокойствие</p>
+          </div>
+        </div>
 
+        <div class="swiper-slide">
+          <div class="team__card">
+            <img src="img/team/2.jpg" alt="">
+            <h4>Анатолий Викторович Волошинский</h4>
+            <p>Моя задача — обеспечить ваше абсолютное юридическое спокойствие</p>
+          </div>
+        </div>
 
+        <div class="swiper-slide">
+          <div class="team__card">
+            <img src="img/team/3.jpg" alt="">
+            <h4>Анатолий Викторович Волошинский</h4>
+            <p>Моя задача — обеспечить ваше абсолютное юридическое спокойствие</p>
+          </div>
+        </div>
 
+        <div class="swiper-slide">
+          <div class="team__card">
+            <img src="img/team/4.jpg" alt="">
+            <h4>Анатолий Викторович Волошинский</h4>
+            <p>Моя задача — обеспечить ваше абсолютное юридическое спокойствие</p>
+          </div>
+        </div>
 
+        <div class="swiper-slide">
+          <div class="team__card">
+            <img src="img/team/5.jpg" alt="">
+            <h4>Анатолий Викторович Волошинский</h4>
+            <p>Моя задача — обеспечить ваше абсолютное юридическое спокойствие</p>
+          </div>
+        </div>
 
-    <footer>
+        <div class="swiper-slide">
+          <div class="team__card">
+            <img src="img/team/6.jpg" alt="">
+            <h4>Анатолий Викторович Волошинский</h4>
+            <p>Моя задача — обеспечить ваше абсолютное юридическое спокойствие</p>
+          </div>
+        </div>
 
+         <div class="swiper-slide">
+          <div class="team__card">
+            <img src="img/team/6.jpg" alt="">
+            <h4>Анатолий Викторович Волошинский</h4>
+            <p>Моя задача — обеспечить ваше абсолютное юридическое спокойствие</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <div class="cta__card">
+            <h2 class="title">Остались вопросы? Оставьте заявку</h2>
+            <p class="title__text">Мы понимаем, что такое решение не принимают в спешке. Поэтому наша первая консультация — это не продажа, а спокойный разговор. 
+Он нужен для того, чтобы вы получили честные ответы на все свои вопросы и приняли верное решение без всякого давления.</p>
+
+ <form class="cons__form cta__form" action="#" method="post">
+                    <div class="form-group">
+                      <input type="text" name="name" placeholder="Ваше имя" required class="form-input" />
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" name="phone" placeholder="Телефон" required class="form-input" />
+                    </div>
+
+                    <div class="form-group">
+                      <input type="email" name="email" placeholder="Ваш email" required class="form-input" />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-form">Записаться <span class="btn-icon"
+                    ><img src="img/Vector.svg" alt="стрелка" /></span
+                ></button>
+                    
+                  </form>
+                  <p class="form-policy">
+                      Нажимая на кнопку, я соглашаюсь с <a href="#" target="_blank">политикой обработки персональных данных</a>
+                    </p>
+        </div>
+    </div>
+</section>
+
+<section class="questions">
+    <div class="container">
+        <h2 class="title"><span>Частые вопросы</span> о суррогатном материнстве</h2>
+
+         <div class="faq__col">
+              <div class="faq__item">
+                <button class="faq__question" type="button">
+                  Как будет строиться наше общение с суррогатной мамой? Мы хотим участвовать в процессе, но боимся быть навязчивыми. 
+Как часто мы будем получать новости о ходе беременности?
+                  <span class="faq__toggle"></span>
+                </button>
+                <div class="faq__answer">Ответ на этот вопрос...</div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question" type="button">
+                 Что входит в вашу программу, если беременность пойдет не по плану? Например, если понадобится госпитализация для сохранения беременности или дополнительное лечение? Покроет ли это наша фиксированная оплата?
+                  <span class="faq__toggle"></span>
+                </button>
+                <div class="faq__answer">Ответ на этот вопрос...</div>
+              </div>
+              <div class="faq__item">
+                <button class="faq__question" type="button">
+                  Насколько конфиденциален весь процесс? Узнают ли о нашем участии на работе, в клинике или кто-то еще, если мы хотим сохранить это в полной тайне?
+                  <span class="faq__toggle"></span>
+                </button>
+                <div class="faq__answer">Ответ на этот вопрос...</div>
+              </div>
+
+                <div class="faq__item">
+                <button class="faq__question" type="button">
+                  Как вы контролируете, что суррогатная мама соблюдает все предписания врачей, правильно питается и ведет здоровый образ жизни? 
+Это один из наших главных поводов для беспокойства.
+                  <span class="faq__toggle"></span>
+                </button>
+                <div class="faq__answer">Ответ на этот вопрос...</div>
+              </div>
+
+                <div class="faq__item">
+                <button class="faq__question" type="button">
+                  Что, если первая попытка переноса эмбриона окажется неудачной? Сколько попыток входит в стоимость вашей программы
+                  <span class="faq__toggle"></span>
+                </button>
+                <div class="faq__answer">Ответ на этот вопрос...</div>
+              </div>
+
+                <div class="faq__item">
+                <button class="faq__question" type="button">
+                  Что происходит сразу после родов? как быстро мы увидим малыша и как юридически оформляется передача ребенка?
+                  <span class="faq__toggle"></span>
+                </button>
+                <div class="faq__answer">Ответ на этот вопрос...</div>
+              </div>
+
+                <div class="faq__item">
+                <button class="faq__question" type="button">
+                  А если для программы нам понадобятся донорские яйцеклетки? Вы помогаете с их подбором и включено ли это в общую программу?
+                  <span class="faq__toggle"></span>
+                </button>
+                <div class="faq__answer">Ответ на этот вопрос...</div>
+              </div>
+            </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+       <div class="container">
+        <div class="footer__items">
+             <div class="footer__logo"><a href="/">
+                <img src="/img/logo_dark.svg" alt="">
+             </a></div>
+           <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="#results">Результаты</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#path">Путь</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#program">Программа</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#stories">Истории</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#consultation">Консультация</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#team">Команда</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#faq">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__contacts">
+            <a href="tel:+8 (800) 800 00 00">8 (800) 800 00 00</a>
+            <a href="mailto:info.embry.ru">info.embry.ru</a>
+          </div>
+           <a class="btn btn-primary btn-footer" href="#">
+              Оставить заявку
+              <span class="btn-icon"
+                ><img src="img/Vector.svg" alt="стрелка"
+              /></span>
+            </a>
+        </div>
+        <div class="bottom__footer">
+            <p>2025. Все права защищены.</p>
+            <a href="#">Политика обработки персональных данных</a>
+            <a href="#">Пользовательское соглашение</a>
+        </div>
+       </div>
     </footer>
-</footer>
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+      defer
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
