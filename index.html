@@ -55,46 +55,59 @@
             </a>
           </div>
 
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="#results">Результаты</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#path">Путь</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#program">Программа</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#stories">Истории</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#consultation">Консультация</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#team">Команда</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#faq">FAQ</a>
-              </li>
-            </ul>
-          </nav>
+         <nav class="nav">
+  <ul class="nav__list">
+    <li class="nav__item"><a class="nav__link" href="#results">Результаты</a></li>
+    <li class="nav__item"><a class="nav__link" href="#path">Путь</a></li>
+    <li class="nav__item"><a class="nav__link" href="#program">Программа</a></li>
+    <li class="nav__item"><a class="nav__link" href="#stories">Истории</a></li>
+    <li class="nav__item"><a class="nav__link" href="#consultation">Консультация</a></li>
+    <li class="nav__item"><a class="nav__link" href="#team">Команда</a></li>
+    <li class="nav__item"><a class="nav__link" href="#faq">FAQ</a></li>
+  </ul>
 
-          <div class="header__phone">
-            <a href="tel:+788008000000">8 (800) 800 00 00</a>
-          </div>
+  <!-- Добавляем только для мобильного меню -->
+  <div class="nav__extras">
+    
+    <a class="btn btn-primary btn-primary--nav" href="#">
+      Оставить заявку
+      <span class="btn-icon">
+        <img src="img/Vector.svg" alt="стрелка" />
+      </span>
+    </a>
 
-          <div class="header__button">
-            <a class="btn btn-primary btn-primary--header" href="#">
-              Оставить заявку
-              <span class="btn-icon"
-                ><img src="img/Vector.svg" alt="стрелка"
-              /></span>
-            </a>
-          </div>
+    <a href="tel:+788008000000" class="nav__phone">8 (800) 800 00 00</a>
+    
+    <a href="mailto:info.embry.ru" class="nav__phone">info.embry.ru</a>
+
+  </div>
+</nav>
+
+<div class="header__phone">
+  <a href="tel:+788008000000">8 (800) 800 00 00</a>
+</div>
+
+<div class="header__button">
+  <a class="btn btn-primary btn-primary--header" href="#">
+    Оставить заявку
+    <span class="btn-icon"><img src="img/Vector.svg" alt="стрелка" /></span>
+  </a>
+</div>
+
+
+
+          <button class="burger" aria-label="Открыть меню">
+  <svg class="burger__icon" width="30" height="30" viewBox="0 0 100 100">
+    <path class="burger__line" d="M10 25h80M10 50h80M10 75h80" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  </svg>
+  <svg class="burger__close" width="30" height="30" viewBox="0 0 100 100">
+    <path d="M20 20L80 80M80 20L20 80" stroke="#000" stroke-width="8" stroke-linecap="round"/>
+  </svg>
+</button>
+
+
         </div>
-        <!-- .header__inner закрыт -->
+      
 
         <div class="hero">
           <div class="hero__content">
@@ -116,7 +129,7 @@
                   <li>Не считаем попытки — считаем результат</li>
                   <li>
                     Проводим программы в Москве и Абу-Даби
-                    <img src="/img/Flag.jpg" class="flag" alt="" />
+                    <img src="img/Flag.jpg" class="flag" alt="" />
                   </li>
                 </ul>
                 <a class="btn btn-primary btn-hover-lg" href="#"
@@ -164,7 +177,7 @@
     </header>
 
     <main>
-      <section id="about" class="about">
+      <section id="results" class="about">
         <div class="container">
           <h2 class="title title--about">
             Мы создаем семьи <span>и гордимся результатами</span>
@@ -242,7 +255,7 @@
         </div>
       </section>
 
-      <section class="faq" id="faq">
+      <section class="faq" id="path">
         <div class="container">
           <div class="faq__header">
             <h2 class="title title--faq">
@@ -305,11 +318,11 @@
               </div>
             </div>
           </div>
-          <img src="/img/bg-2.jpg" alt="" class="faq__bg" />
+          <img src="img/bg-2.jpg" alt="" class="faq__bg" />
         </div>
       </section>
 
-      <section class="features" id="features">
+      <section class="features" id="program">
         <div class="container">
           <div class="features__header">
             <h2 class="title"><span>Ваши тревоги</span> – берем на себя</h2>
@@ -328,7 +341,7 @@
 
               <div class="features-card__front">
                 <img
-                  src="/img/features/Link.jpg"
+                  src="img/features/Link.jpg"
                   alt=""
                   class="features-card__img"
                 />
@@ -364,7 +377,7 @@
               ></button>
               <div class="features-card__front">
                 <img
-                  src="/img/features/Link-1.jpg"
+                  src="img/features/Link-1.jpg"
                   alt=""
                   class="features-card__img"
                 />
@@ -398,7 +411,7 @@
               ></button>
               <div class="features-card__front">
                 <img
-                  src="/img/features/Link-2.jpg"
+                  src="img/features/Link-2.jpg"
                   alt=""
                   class="features-card__img"
                 />
@@ -434,7 +447,7 @@
               ></button>
               <div class="features-card__front">
                 <img
-                  src="/img/features/Link-3.jpg"
+                  src="img/features/Link-3.jpg"
                   alt=""
                   class="features-card__img"
                 />
@@ -470,7 +483,7 @@
               ></button>
               <div class="features-card__front">
                 <img
-                  src="/img/features/Link-4.jpg"
+                  src="img/features/Link-4.jpg"
                   alt=""
                   class="features-card__img"
                 />
@@ -501,7 +514,7 @@
         </div>
       </section>
 
-      <section class="quotes">
+      <section class="quotes" id="stories">
         <div class="container">
           <div class="quotes__header">
             <h2 class="title title--quotes">
@@ -540,7 +553,7 @@
 
                   <div class="card-body card-body--back">
                     <p>
-                      «Чёткость, предсказуемость, профессионализм… вот наверно три главных слова которыми я бы описал работу агентства» Мы с мужем люди системные. Пришли в агентство после долгих лет попыток, с полным выгоранием но с чётким запросом: нужен понятный процесс без «сюрпризов». И получили даже больше. Во‑первых, скорость. Сказали, что сурмаму подберут без ожидания, и это оказалось правдой. Буквально через неделю после договора мы уже знакомились. Для нас, у которых время это самый ценный ресурс, это было очень, очень важно. Во‑вторых, финансы. Сумма в договоре — финальная. За все время не вылезло ни одного доп платежа, хотя были какие‑то незапланированные анализы. Все входило в стоимость, это давало невероятное чувство контроля. И главное — команда. Наш куратор работал на опережение, нам не приходилось писать и спрашивать ну что там? Новости от врачей приходили раньше, чем мы успевали забеспокоиться. Врачи, отдельная благодарность. Никакой воды, все по делу. В общем, подход к работе — идеальный.
+                      «Чёткость, предсказуемость, профессионализм… вот наверно три главных слова которыми я бы описал работу агентства» Мы с мужем люди системные. Пришли в агентство после долгих лет попыток, с полным выгоранием но с чётким запросом: нужен понятный процесс без «сюрпризов». И получили даже больше. Во‑первых, скорость. Сказали, что сурмаму подберут без ожидания, и это оказалось правдой. Буквально через неделю после договора мы уже знакомились.
                     </p>
                   </div>
 
@@ -572,7 +585,7 @@
 
                   <div class="card-body card-body--back">
                     <p>
-                      «Чёткость, предсказуемость, профессионализм… вот наверно три главных слова которыми я бы описал работу агентства» Мы с мужем люди системные. Пришли в агентство после долгих лет попыток, с полным выгоранием но с чётким запросом: нужен понятный процесс без «сюрпризов». И получили даже больше. Во‑первых, скорость. Сказали, что сурмаму подберут без ожидания, и это оказалось правдой. Буквально через неделю после договора мы уже знакомились. Для нас, у которых время это самый ценный ресурс, это было очень, очень важно. Во‑вторых, финансы. Сумма в договоре — финальная. За все время не вылезло ни одного доп платежа, хотя были какие‑то незапланированные анализы. Все входило в стоимость, это давало невероятное чувство контроля. И главное — команда. Наш куратор работал на опережение, нам не приходилось писать и спрашивать ну что там? Новости от врачей приходили раньше, чем мы успевали забеспокоиться. Врачи, отдельная благодарность. Никакой воды, все по делу. В общем, подход к работе — идеальный.
+                      Чёткость, предсказуемость, профессионализм… вот наверно три главных слова которыми я бы описал работу агентства» Мы с мужем люди системные. Пришли в агентство после долгих лет попыток, с полным выгоранием но с чётким запросом: нужен понятный процесс без «сюрпризов». И получили даже больше. Во‑первых, скорость. Сказали, что сурмаму подберут без ожидания, и это оказалось правдой. Буквально через неделю после договора мы уже знакомились. 
                     </p>
                   </div>
 
@@ -605,7 +618,7 @@
 
                   <div class="card-body card-body--back">
                     <p>
-                      «Чёткость, предсказуемость, профессионализм… вот наверно три главных слова которыми я бы описал работу агентства» Мы с мужем люди системные. Пришли в агентство после долгих лет попыток, с полным выгоранием но с чётким запросом: нужен понятный процесс без «сюрпризов». И получили даже больше. Во‑первых, скорость. Сказали, что сурмаму подберут без ожидания, и это оказалось правдой. Буквально через неделю после договора мы уже знакомились. Для нас, у которых время это самый ценный ресурс, это было очень, очень важно. Во‑вторых, финансы. Сумма в договоре — финальная. За все время не вылезло ни одного доп платежа, хотя были какие‑то незапланированные анализы. Все входило в стоимость, это давало невероятное чувство контроля. И главное — команда. Наш куратор работал на опережение, нам не приходилось писать и спрашивать ну что там? Новости от врачей приходили раньше, чем мы успевали забеспокоиться. Врачи, отдельная благодарность. Никакой воды, все по делу. В общем, подход к работе — идеальный.
+                      «Чёткость, предсказуемость, профессионализм… вот наверно три главных слова которыми я бы описал работу агентства» Мы с мужем люди системные. Пришли в агентство после долгих лет попыток, с полным выгоранием но с чётким запросом: нужен понятный процесс без «сюрпризов». И получили даже больше. Во‑первых, скорость. Сказали, что сурмаму подберут без ожидания, и это оказалось правдой. Буквально через неделю после договора мы уже знакомились.
                     </p>
                   </div>
 
@@ -636,18 +649,18 @@
                 </div>
 
                 <div class="catalog__gallery">
-                    <img src="/img/catalog/1.jpg" alt="" class="catalog__img" />
-                    <img src="/img/catalog/2.jpg" alt="" class="catalog__img" />
-                    <img src="/img/catalog/3.jpg" alt="" class="catalog__img" />
-                    <img src="/img/catalog/4.jpg" alt="" class="catalog__img" />
-                    <img src="/img/catalog/5.jpg" alt="" class="catalog__img" />
+                    <img src="img/catalog/1.jpg" alt="" class="catalog__img" />
+                    <img src="img/catalog/2.jpg" alt="" class="catalog__img" />
+                    <img src="img/catalog/3.jpg" alt="" class="catalog__img" />
+                    <img src="img/catalog/4.jpg" alt="" class="catalog__img" />
+                    <img src="img/catalog/5.jpg" alt="" class="catalog__img" />
                 </div>
                 
             </div>
         </div>
       </section>
 
-      <section class="consultation">
+      <section class="consultation" id="consultation">
         <div class="container">
             <h2 class="title title--cons"><span>Приглашаем</span> на конфиденциальную консультацию</h2>
                 <div class="cons__blocks">
@@ -808,7 +821,7 @@
     </div>
 </section>
 
-<section class="questions">
+<section class="questions" id="faq">
     <div class="container">
         <h2 class="title"><span>Частые вопросы</span> о суррогатном материнстве</h2>
 
@@ -878,9 +891,9 @@
        <div class="container">
         <div class="footer__items">
              <div class="footer__logo"><a href="/">
-                <img src="/img/logo_dark.svg" alt="">
+                <img src="img/logo_dark.svg" alt="">
              </a></div>
-           <nav class="nav">
+           <nav class="footer__nav">
             <ul class="nav__list">
               <li class="nav__item">
                 <a class="nav__link" href="#results">Результаты</a>
@@ -906,15 +919,18 @@
             </ul>
           </nav>
           <div class="footer__contacts">
-            <a href="tel:+8 (800) 800 00 00">8 (800) 800 00 00</a>
+            <div class="footer__contacts__link">
+                <a href="tel:+8 (800) 800 00 00">8 (800) 800 00 00</a>
             <a href="mailto:info.embry.ru">info.embry.ru</a>
-          </div>
+            </div>
+          
            <a class="btn btn-primary btn-footer" href="#">
               Оставить заявку
               <span class="btn-icon"
                 ><img src="img/Vector.svg" alt="стрелка"
               /></span>
             </a>
+            </div>
         </div>
         <div class="bottom__footer">
             <p>2025. Все права защищены.</p>

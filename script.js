@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 const teamSwiper = new Swiper('.team__carousel', {
-  slidesPerView: 6, // для самых больших экранов
+  slidesPerView: 6, 
   spaceBetween: 20,
   loop: false,
   navigation: {
@@ -61,13 +61,75 @@ const teamSwiper = new Swiper('.team__carousel', {
   speed: 600,
   grabCursor: true,
   breakpoints: {
-    1600: { slidesPerView: 6 },  // экраны 1600px+
+    1600: { slidesPerView: 6 },  
     1200: { slidesPerView: 6 },
     880: { slidesPerView: 5 },
     600: { slidesPerView: 3 },
     0: { slidesPerView: 2},
   },
 });
+
+
+
+let mobileSwiper;
+
+function initFeaturesSwiper() {
+  const grid = document.querySelector('.features-grid');
+
+  if (window.innerWidth < 768 && !mobileSwiper) {
+
+    grid.classList.add('swiper');
+    grid.querySelectorAll('.features-card').forEach(card => card.classList.add('swiper-slide'));
+
+
+    if (!grid.querySelector('.swiper-wrapper')) {
+      const wrapper = document.createElement('div');
+      wrapper.classList.add('swiper-wrapper');
+      while (grid.firstChild) {
+        wrapper.appendChild(grid.firstChild);
+      }
+      grid.appendChild(wrapper);
+    }
+
+  
+    mobileSwiper = new Swiper('.features-grid.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 15,
+      loop: false,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  } else if (window.innerWidth >= 768 && mobileSwiper) {
+
+    mobileSwiper.destroy(true, true);
+    mobileSwiper = undefined;
+
+    const wrapper = grid.querySelector('.swiper-wrapper');
+    if (wrapper) {
+  
+      while (wrapper.firstChild) {
+        grid.appendChild(wrapper.firstChild);
+      }
+      wrapper.remove();
+    }
+
+   
+    grid.classList.remove('swiper');
+    grid.querySelectorAll('.features-card').forEach(card => card.classList.remove('swiper-slide'));
+  }
+}
+
+
+window.addEventListener('load', initFeaturesSwiper);
+window.addEventListener('resize', initFeaturesSwiper);
+
+
 
 
 });
@@ -87,6 +149,36 @@ document.addEventListener("DOMContentLoaded", () => {
       toggle.textContent = card.classList.contains('active') ? '-' : '+';
     });
   });
+});
+
+
+
+const offset = 80; 
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const target = document.querySelector(targetId);
+
+    if (target) {
+      const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  });
+});
+
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav');
+
+burger.addEventListener('click', () => {
+  burger.classList.toggle('active');
+  nav.classList.toggle('active');
+  document.body.classList.toggle('no-scroll');
 });
 
 
