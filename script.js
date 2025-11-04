@@ -221,7 +221,7 @@ document.querySelectorAll('.validate-form').forEach(form => {
     }
 
     if (phoneInput) {
-      // Простая проверка, только цифры и длина >= 10
+     
       const phone = phoneInput.value.replace(/\D/g,'');
       if (!validator.isLength(phone, { min: 10 })) {
         alert('Неверный телефон');
@@ -231,9 +231,23 @@ document.querySelectorAll('.validate-form').forEach(form => {
 
     if (valid) {
       alert('Форма валидна! Можно отправлять');
-      form.submit(); // если нужно реальное отправление
+      form.submit(); 
     }
   });
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const headerInner = document.querySelector(".header__inner");
+
+
+
+  // --- Липкий эффект при скролле ---
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      headerInner.classList.add("is-sticky");
+    } else {
+      headerInner.classList.remove("is-sticky");
+    }
+  });
+});

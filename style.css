@@ -1734,3 +1734,61 @@ header{
 }
 
 }
+
+
+  .header__inner {
+      position: static; /* изначально статично */
+      width: 100%;
+      transition: all 0.3s ease;
+      z-index: 50;
+    }
+    .header__inner .container {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 0 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header__inner.is-sticky {
+      position: fixed;
+      max-width: 1440px;
+      padding: 10px 20px;
+      margin: 0 auto;
+      top: 10px;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.514);
+      backdrop-filter: blur(40px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      z-index: 1000;
+    }
+    .header__inner.is-sticky a {
+      color: #000;
+      transition: color 0.3s ease;
+    }
+    .header__inner.is-sticky a:hover {
+      color: #e1fcad;
+    }
+    .header__inner.is-sticky .btn:hover {
+      background-color: #e1fcad;
+      color: #000;
+    }
+    .header__inner.is-sticky svg path {
+      fill: #000;
+    }
+
+
+    @media(max-width:768px){
+       .header__inner.is-sticky {
+        top: 0;
+        border-radius: 0;
+        padding: 15px 20px;
+       }
+
+       .header__inner.is-sticky svg path{
+        stroke: #000 !important;
+       }
+    }
