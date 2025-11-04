@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-const offset = 80; 
+const offset = 120; 
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
@@ -190,7 +190,7 @@ document.querySelectorAll('.about__toggle').forEach(toggle => {
   });
 });
 
-// Скрыть меню после перехода по ссылке
+
 document.querySelectorAll('.nav__link').forEach(link => {
   link.addEventListener('click', () => {
     burger.classList.remove('active');
@@ -241,13 +241,32 @@ document.addEventListener("DOMContentLoaded", () => {
   const headerInner = document.querySelector(".header__inner");
 
 
-
-  // --- Липкий эффект при скролле ---
   window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
       headerInner.classList.add("is-sticky");
     } else {
       headerInner.classList.remove("is-sticky");
     }
+  });
+});
+
+
+// JS
+const upBtn = document.getElementById('upToTop');
+
+// Показываем кнопку после скролла вниз 300px
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    upBtn.classList.add('show');
+  } else {
+    upBtn.classList.remove('show');
+  }
+});
+
+// Плавный скролл наверх
+upBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
   });
 });
