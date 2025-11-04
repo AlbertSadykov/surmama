@@ -251,10 +251,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// JS
+
 const upBtn = document.getElementById('upToTop');
 
-// Показываем кнопку после скролла вниз 300px
+
 window.addEventListener('scroll', () => {
   if (window.scrollY > 300) {
     upBtn.classList.add('show');
@@ -263,10 +263,60 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Плавный скролл наверх
+
 upBtn.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
   });
+});
+
+
+//modal
+document.addEventListener('DOMContentLoaded', () => {
+  const modal = document.getElementById('modal');
+  const modalBtns = document.querySelectorAll('.modal-btn');
+  const modalClose = modal.querySelector('.modal-close');
+
+
+  const openModal = () => {
+    modal.classList.add('show');
+    sessionStorage.setItem('modalShown', 'true');
+    setCookie('modalShown', 'true', 1);
+  };
+
+
+  const closeModal = () => {
+    modal.classList.remove('show');
+  };
+
+
+  modalBtns.forEach(btn => {
+    btn.addEventListener('click', openModal);
+  });
+
+
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', e => {
+    if(e.target === modal) closeModal();
+  });
+
+  
+  const modalAlreadyShown = sessionStorage.getItem('modalShown') || getCookie('modalShown');
+  if (!modalAlreadyShown) {
+    setTimeout(openModal, 5000); 
+  }
+
+ 
+  function setCookie(name, value, days) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days*24*60*60*1000));
+    document.cookie = `${name}=${value};expires=${date.toUTCString()};path=/`;
+  }
+
+  function getCookie(name) {
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
 });

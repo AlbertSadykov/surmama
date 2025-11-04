@@ -69,7 +69,7 @@
   <!-- контакты для мобильного меню -->
   <div class="nav__extras">
     
-    <a class="btn btn-primary btn-primary--nav" href="#">
+    <a class="btn btn-primary btn-primary--nav modal-btn" href="#">
       Оставить заявку
       <span class="btn-icon">
         <img src="img/Vector.svg" alt="стрелка" />
@@ -88,7 +88,7 @@
 </div>
 
 <div class="header__button">
-  <a class="btn btn-primary btn-primary--header" href="#">
+  <a class="btn btn-primary btn-primary--header modal-btn" href="#">
     Оставить заявку
     <span class="btn-icon"><img src="img/Vector.svg" alt="стрелка" /></span>
   </a>
@@ -132,7 +132,7 @@
                     <img src="img/Flag.jpg" class="flag" alt="" />
                   </li>
                 </ul>
-                <a class="btn btn-primary btn-hover-lg" href="#"
+                <a class="btn btn-primary btn-hover-lg modal-btn" href="#"
                   >Начать путь к родительству
                   <span class="btn-icon"
                     ><img src="img/Vector.svg" alt="стрелка" /></span
@@ -144,7 +144,7 @@
                   Получите достойное вознаграждение и нашу полную поддержку,
                   помогая другим стать родителями
                 </p>
-                <a class="btn btn-second" href="#"
+                <a class="btn btn-second modal-btn" href="#"
                   >Узнать условия
                   <span class="btn-icon btn-icon-second"
                     ><img src="img/Vector.svg" alt="стрелка" /></span
@@ -924,7 +924,7 @@
             <a href="mailto:info.embry.ru">info.embry.ru</a>
             </div>
           
-           <a class="btn btn-primary btn-footer" href="#">
+           <a class="btn btn-primary btn-footer modal-btn" href="#">
               Оставить заявку
               <span class="btn-icon"
                 ><img src="img/Vector.svg" alt="стрелка"
@@ -940,12 +940,43 @@
        </div>
 
 
+<!-- модальное окно -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <h2>Запишитесь на консультацию</h2>
+    <form class="cons__form validate-form" action="#" method="post">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Ваше имя" required class="form-input" />
+      </div>
+      <div class="form-group">
+        <input type="tel" name="phone" placeholder="Телефон" required class="form-input" />
+      </div>
+      <button type="submit" class="btn btn-primary btn-form">
+        Записаться
+        <span class="btn-icon">
+          <img src="img/Vector.svg" alt="стрелка" />
+        </span>
+      </button>
+      <p class="form-policy">
+        Нажимая на кнопку, я соглашаюсь с 
+        <a href="#" target="_blank">политикой обработки персональных данных</a>
+      </p>
+    </form>
+  </div>
+</div>
+
+
+
        <button id="upToTop" class="up-to-top" aria-label="Наверх">
   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <line x1="12" y1="19" x2="12" y2="5"></line>
     <polyline points="5 12 12 5 19 12"></polyline>
   </svg>
 </button>
+
+
+
     </footer>
 
     
