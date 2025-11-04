@@ -1454,6 +1454,11 @@ header {
   flex-direction: column;
 }
 
+
+.footer__contacts__link a:hover{
+  color: #C4F791;
+}
+
 .footer__contacts a{
   color:#000;
   transition: .2s linear;
